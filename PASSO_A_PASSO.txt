@@ -1,0 +1,45 @@
+COMECE AQUI — V4 GEOAPIFY
+
+NÃO coloque sua API key dentro destes arquivos.
+
+ETAPA 1 — GITHUB
+1. Crie um repositório público: roteirizador-logistico-v4
+2. Extraia este ZIP.
+3. No GitHub, use Add file > Upload files.
+4. Envie o CONTEÚDO extraído, não o ZIP.
+5. Na raiz do repositório devem aparecer index.html, css, js, functions, README.md.
+6. Faça Commit changes.
+
+ETAPA 2 — CLOUDFLARE PAGES
+1. Acesse Cloudflare > Workers & Pages.
+2. Crie/importe um projeto Pages conectado ao GitHub.
+3. Escolha roteirizador-logistico-v4.
+4. Production branch: main.
+5. Projeto estático HTML/CSS/JS, sem framework e sem comando de build.
+6. Faça o deploy.
+
+ETAPA 3 — SECRET
+1. Abra Settings do projeto Pages.
+2. Vá a Variables and Secrets.
+3. Adicione um Secret:
+   Nome: GEOAPIFY_API_KEY
+   Valor: sua API key do Geoapify
+4. Salve.
+5. Faça um novo deployment.
+
+ETAPA 4 — PRIMEIRO TESTE
+1. Abra a URL .pages.dev.
+2. Informe uma base completa.
+3. Cole APENAS 4 endereços no primeiro teste.
+4. Clique VALIDAR.
+5. Confira visualmente os 4 marcadores.
+6. Clique OTIMIZAR.
+7. Confira rota, sequência e setas.
+8. Só depois teste 15 endereços.
+
+IMPORTANTE
+- O código filtra geocodificação para Brasil.
+- Matrix usa Geoapify Route Matrix com mode=drive.
+- Routing usa Geoapify Routing.
+- A chave fica somente no Cloudflare.
+- Tiles visuais ainda usam OSM público nesta fase piloto.
