@@ -1,0 +1,13 @@
+ATUALIZAÇÃO V4 — SETAS DE SENTIDO DA ROTA
+
+Esta versão mantém a estrutura do projeto anterior e corrige a camada de setas.
+As setas agora são aplicadas diretamente aos trechos da geometria rodoviária devolvida pelo Geoapify, acompanhando curvas e ruas.
+
+Para atualizar no GitHub:
+1. Extraia este ZIP.
+2. No repositório roteirizador-logistico-v4, substitua os arquivos/pastas existentes pelos deste pacote.
+3. Faça Commit changes na branch main.
+4. O Cloudflare Pages deverá iniciar um novo deploy automaticamente.
+5. Após concluir, atualize a página com Ctrl+F5 e teste novamente.
+
+IMPORTANTE: a chave GEOAPIFY_API_KEY continua somente no Cloudflare. Não coloque a chave no GitHub.
